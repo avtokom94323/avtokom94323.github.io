@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>"Авто Комфорт" Центр дополнительного оборудования г.Сургут | Контакты</title>
+    <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#f01111">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+
+    <script type="text/javascript">
+      var map;
+  
+      DG.then(function () {
+          map = DG.map('map', {
+              center: [61.26801, 73.394186],
+              zoom: 17
+          });
+          //DG.marker([61.26801, 73.394186]).addTo(map).bindPopup('Авто Комфорт. Автоцентр<br><p style="color:yellow;">Сургут, Профсоюзов, 25 к3</p>');
+          DG.popup().setLatLng(map.getCenter()).setContent('<b>Авто Комфорт</b><br><b style="color:lightgray;">(3462) 91-00-51</b><br><p style="color:yellow;">Сургут, Профсоюзов, 25 к3,<br>«Буровик 21» бокс 5А</p>').openOn(map);
+      });
+    </script>   
+  </head>
+
+  <body>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">
+                  <span class="fa fa-wrench nav-icon hidden-xs">
+                    <img class="hidden-xs" alt="Автокомфорт" width="295" height="41" src="img/logo.png">
+                  </span>
+                  <img class="visible-xs" src="img/logo-m.png" width="210" height="49" alt="Автокомфорт">
+              </a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html"><i class="fa fa-check-square-o color-2"></i> Главная</a></li>
+                <li><a href="about.html"><i class="fa fa-car color-2"></i> Про нас</span></a></li>
+                <li><a href="services.html"><i class="fa fa-cogs color-2"></i> Все услуги</a></li>
+                <li class="active"><a href="contact.html"><i class="fa fa-phone color-2"></i> Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="success-modalModalLabel" aria-hidden="true" id="success-modal">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title text-center" id="success-modalLabel">Успешно отправлено</h4>
+                </div>
+                <div class="modal-footer">
+                  <div class="text-center">
+                  <button type="button" class="btn btn-primary" id="success-modal-ok">OK</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="errFieldsModalLabel" aria-hidden="true" id="errFields-modal">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="errFieldsLabel">Нужно заполнить все поля!</h4>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="text-center">
+                    <button type="button" class="btn btn-primary" id="errFields-modal-ok">OK</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+  <section class="section-title">
+    <div class="container">
+      <h1>КОНТАКТЫ<small> Где мы находимся?</small></h1>
+    </div>
+  </section>
+        
+  <section class="section-gray">
+    <div class="container">
+      <div class="animated fadeIn">
+      <div class="row">
+        <div class="col-md-8">
+          <body>
+            <div id="map" style="width:100%; height:400px"></div>
+          </body>
+          <h3>Есть вопросы? Пишите нам!</h3>
+                <form>
+                  <div class="form-group">
+                    <label>Имя</label>
+                    <input type="text" class="form-control" id="nameUser">
+                  </div>
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" id="emailUser">
+                  </div>
+                    <div class="form-group">
+                    <label>Сообщение</label>
+                   <textarea class="form-control" id="messageUser" rows="6"></textarea>
+                  </div>
+                  <button type="button" class="btn btn-primary" onclick="sendEmailQuestions()">Отправить</button>
+                </form>
+        </div>
+        <div class="col-md-4">
+          <h2>НАШИ КОНТАКТЫ</h2>
+          <span class="line-bottom2 width-sm"></span>
+                <p style="font-size: 16pt;">
+                    г.Сургут, ул.Профсоюзов 25к3<br>"Буровик-21" бокс 5А<br>
+                </p>
+                <p style="font-size: 16pt;"><i class="fa fa-phone fa-color"></i> 
+                    <abbr title="Phone"></abbr>:(3462) 91-00-51, (3462) 60-56-72, (3462) 60-56-71
+                  </p>
+                <p style="font-size: 16pt;"><i class="fa fa-envelope-o fa-color"></i> 
+                    <abbr title="Email"></abbr>: <a href="mailto:avto.komfort.86@yandex.ru" style="color:#454242;">avto.komfort.86@yandex.ru</a>
+                </p>
+                <p style="font-size: 16pt;"><i class="fa fa-clock-o fa-color"></i> 
+                    <abbr title="Hours"></abbr>: Понедельник - Суббота:<br>с 9:00 до 18:00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+     
+  <footer>
+      <br><br>
+      <p>&copy; 2017 "Авто Комфорт" Центр дополнительного оборудования</p>
+      <p>т.(3462) 91-00-51, (3462) 60-56-72, (3462) 60-56-71</p>
+      <p>г.Сургут, ул.Профсоюзов, 25 к3, бокс 5А</p>
+      <p class="developer">Разработка сайтов <a href="http://kedrovski.com">kedrovski.com</a></p>
+      <br><br>
+  </footer>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_u2rm0i50T23yxNX7G8Eba");
+       })();
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+       AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>"Авто Комфорт" Центр дополнительного оборудования г.Сургут | Webasto, Hydronic, Starline, Pandora, сигнализация, автозвук, шумоизоляция, замена лобового стекла, ремонт сколов</title>
+    <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#f01111">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    
+        <script type="text/javascript">
+          var map;
+      
+          DG.then(function () {
+              map = DG.map('map', {
+                  center: [61.26801, 73.394186],
+                  zoom: 17
+              });
+              DG.marker([61.26801, 73.394186]).addTo(map).bindPopup('<b>Авто Комфорт</b><br><b style="color:lightgray;">(3462) 91-00-51</b><br><p style="color:yellow;">Сургут, Профсоюзов, 25 к3,<br>«Буровик 21» бокс 5А</p>');
+          });
+        </script>  
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+              <span class="fa fa-wrench nav-icon hidden-xs">
+                <img class="hidden-xs" alt="Автокомфорт" width="295" height="41" src="img/logo.png">
+              </span>
+              <img class="visible-xs" src="img/logo-m.png" width="210" height="49" alt="Автокомфорт">
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html"><i class="fa fa-check-square-o color-2"></i> Главная</a></li>
+            <li><a href="about.html"><i class="fa fa-car color-2"></i> Про нас</span></a></li>
+            <li><a href="services.html"><i class="fa fa-cogs color-2"></i> Все услуги</a></li>
+            <li><a href="contact.html"><i class="fa fa-phone color-2"></i> Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="success-modalModalLabel" aria-hidden="true" id="success-modal">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title text-center" id="success-modalLabel">Успешно отправлено</h4>
+            </div>
+            <div class="modal-footer">
+              <div class="text-center">
+              <button type="button" class="btn btn-primary" id="success-modal-ok">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="success-modalModalLabel2" aria-hidden="true" id="success-modal2">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="success-modalLabel2">Успешно отправлено</h4>
+              </div>
+              <div class="modal-footer">
+                <div class="text-center">
+                <button type="button" class="btn btn-primary" id="success-modal-ok2">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="errFieldsModalLabel" aria-hidden="true" id="errFields-modal">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title text-center" id="errFieldsLabel">Нужно заполнить все поля!</h4>
+                </div>
+                <div class="modal-footer">
+                  <div class="text-center">
+                  <button type="button" class="btn btn-primary" id="errFields-modal-ok">OK</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="callback-modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Обратный звонок</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <div class="form-group">
+                      <label class="sr-only" for="inputName">Имя</label>
+                      <input type="text" class="form-control input-lg" id="inputName" placeholder="Имя">
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="inputNumber">Телефон</label>
+                      <input type="text" class="form-control input-lg" id="inputNumber" placeholder="номер" pattern="[789][0-9]{9}">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <div class="text-center">
+                <button type="submit" id="btn-callback-carousel-ok" class="btn btn-primary">ЗАПИСАТЬСЯ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div id="carousel-avto" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-avto" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-avto" data-slide-to="1"></li>
+        <li data-target="#carousel-avto" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        
+        <div class="item active">
+          <img class="hidden-xs" src="img/bg2.jpg">
+          <img class="visible-xs" src="img/bg2-m.jpg">
+          <div class="carousel-caption">
+              <div class="row">
+                  <div class="col-md-8 animated fadeInDown">
+                    <i class="fa fa-thermometer-three-quarters fontCarousel2" style="color: #B2190E"></i>
+                    <b class="fontCarousel"> Webasto, Hydronic</b>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-8 animated fadeInUp">
+                      <b class="fontCarousel2">УСТАНОВКА<br>НАСТРОЙКА<i class="fa fa-cog fa-spin fa-fw"></i></b>
+                  </div>
+                  <br>
+                  <div class="col-md-8 animated fadeInLeft">
+                      <p><a class="btn btn-primary btn-lg" href="#" id="btn-callback-carousel">
+                          Заказать звонок &nbsp; <i class="fa fa-phone"></i>
+                      </a></p>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="hidden-xs" src="img/bg1.jpg">
+            <img class="visible-xs" src="img/bg1-m.jpg">
+            <div class="container">
+              <div class="carousel-caption">
+                <div class="row">
+                  <div class="col-md-7 animated fadeInUp">
+                    <b class="fontCarouselBig">ВСЁ В КРЕДИТ<br>1% В МЕСЯЦ</b>
+                  </div>
+                  <div class="col-md-7 animated fadeInLeft">
+                    <p><a class="btn btn-primary btn-lg" href="#contact-section">
+                       Где мы находимся &nbsp; <i class="fa fa-map-marker"></i>
+                    </a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="item">
+          <img class="hidden-xs" src="img/bg3.jpg">
+          <img class="visible-xs" src="img/bg3-m.jpg">
+          <div class="carousel-caption">
+            <div class="row">
+                <div class="col-md-8 animated fadeInUp">
+                  <i class="fa fa-bullhorn fontCarousel2" style="color: #B2190E"></i>
+                  <b class="fontCarousel"> Starline, Pandora</b>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 animated fadeInDown">
+                <b class="fontCarousel2">СИГНАЛИЗАЦИЯ</b>
+              </div>
+              <div class="col-md-12 animated fadeInLeft">
+                  <p><a class="btn btn-primary btn-lg" href="#" id="btn-callback-carousel2">
+                      Заказать звонок &nbsp; <i class="fa fa-phone"></i>
+                  </a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-gray-top" data-aos="zoom-in">
+    <div class="text-center">
+      <h1 style="font-size: 38pt;">УСЛУГИ НАШЕГО СЕРВИСА</h1>
+      <div class="line-bottom width-sm2"></div>
+      <br><br><br>
+    </div>
+    </section>
+
+        <section class="section-windows">
+            <div class="text-center">
+              <a class="link" href="services.html#change-window"><h1 style="font-size: 34pt;" data-aos="fade-up">ЗАМЕНА СТЕКОЛ</h1></a>
+              <div class="line-bottom width-sm2"></div>
+            </div>
+          </section>
+
+          <section class="section-broken-windows">
+              <div class="text-center">
+                  <a class="link" href="services.html#fix-window"><h1 style="font-size: 34pt;" data-aos="fade-up">РЕМОНТ ТРЕЩИН</h1></a>
+                <div class="line-bottom width-sm2"></div>
+              </div>
+            </section>
+
+        <section class="section-black-windows">
+            <div class="text-center">
+                <a class="link" href="services.html#dark-window"><h1 style="font-size: 34pt;" data-aos="fade-up">ТОНИРОВКА</h1></a>
+              <div class="line-bottom width-sm2"></div>
+            </div>
+          </section> 
+
+          <section class="section-toolbox">
+              <div class="text-center">
+                  <a class="link" href="services.html"><h1 style="font-size: 34pt;" data-aos="fade-up">ВСЕ УСЛУГИ</h1></a>
+                <div class="line-bottom width-sm2"></div>
+              </div>
+            </section> 
+
+    <section class="section-gray">
+      <div class="text-center">
+          <h1 data-aos="zoom-in">НАШИ ПРЕИМУЩЕСТВА</h1>
+          <div class="line-bottom width-sm2"></div>
+      </div>
+      <br><br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 text-center" data-aos="fade-up" data-aos-duration="1400">
+              <i class="fa fa-thumbs-o-up fa-color" style="font-size: 75pt"></i>
+            <h3>Профессионализм</h3>
+            <span class="line-bottom2 width-sm"></span>
+            <p class="desc">Профессиональный подход обеспечивает качественное обслуживание каждого клиента</p>
+          </div>
+          <div class="col-md-3 col-sm-3 text-center" data-aos="fade-up" data-aos-duration="1400">
+              <i class="fa fa-rub fa-color" style="font-size: 75pt"></i>
+            <h3>Приятные цены</h3>
+            <span class="line-bottom2 width-sm"></span>
+            <p class="desc">Доступные цены это визитная карточка нашего сервиса</p>
+          </div>
+          <div class="col-md-3 col-sm-3 text-center" data-aos="fade-up" data-aos-duration="1400">
+              <i class="fa fa-tachometer fa-color" style="font-size: 75pt"></i>
+            <h3>Скорость обслуживания</h3>
+            <span class="line-bottom2 width-sm"></span>
+            <p class="desc">Наши высококвалифицированные мастера помогут решить вашу проблему быстро и качественно</p>
+          </div>
+          <div class="col-md-3 col-sm-3 text-center" data-aos="fade-up" data-aos-duration="1400">
+              <i class="fa fa-handshake-o fa-color" style="font-size: 75pt"></i>
+            <h3>Гарантия 100%</h3>
+            <span class="line-bottom2 width-sm"></span>
+            <p class="desc">Гарантия на все виды работ и услуг</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-3 text-center">
+          </div>
+          <div class="col-md-3 col-sm-3 text-center" data-aos="fade-up" data-aos-duration="2200">
+              <i class="fa fa-university fa-color" style="font-size: 75pt"></i>
+            <h3>Кредит 1%</h3>
+            <span class="line-bottom2 width-sm3"></span>
+            <p class="desc">Уникальная возможность сделать сейчас, а платить позднее</p>
+          </div>
+          <div class="col-md-3 col-sm-3 text-center" data-aos="fade-up" data-aos-duration="2200">
+              <i class="fa fa-television fa-color" style="font-size: 75pt"></i>
+            <h3>Комфорт</h3>
+            <span class="line-bottom2 width-sm3"></span>
+            <p class="desc">Удобная клиентская зона, различные варианты записи</p>
+          </div>
+          <div class="col-md-3 col-sm-3 text-center">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-secondary slogan" id="contact-section">
+      <div class="fix-padding" data-aos="zoom-in-up">
+        <h1 class="fontCarousel">ЗАПИШИТЕСЬ ПРЯМО СЕЙЧАС</h1>
+        <form class="form-inline vcenter">
+          <div class="form-group">
+                <label class="sr-only" for="name">Имя</label>
+                <input type="text" class="form-control input-lg" id="name" placeholder="Имя">
+          </div>
+          <div class="form-group">
+                <label class="sr-only" for="phone">Телефон</label>
+                <input type="text" class="form-control input-lg" id="phone" placeholder="номер" pattern="[789][0-9]{9}">
+          </div>
+            <input type="button" class="btn btn-primary btn-lg" value="ЗАПИСАТЬСЯ" onclick="sendEmailCallBack('name','phone', true)"/>
+        </form>
+        <br><br><br>
+      </div>
+    </section>
+    
+  <section class="section-map" >
+      <div class="col-md-12">
+        <div class="row">
+            <body>
+              <div id="map" style="width:100%; height:550px" ></div>
+            </body>
+            <span class="map-frame hideIf" 
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+              <div class="text-center">
+                <h3 class="color-1" style="padding-bottom: 10px;"><b>АВТО КОМФОРТ</b></h3>
+                <p class="color-2" style="font-size:23px"><b>(3462) 91-00-51</b></p>
+                  <p class="color-1" style="font-size:18px"><b>ул.Профсоюзов 25к3<br>"Буровик-21" бокс 5А</b></p>
+                </p>
+              </div>
+            </span> 
+          </div>
+      </div>
+    </section>    
+
+    <footer>
+      <div data-aos="zoom-in">
+        <div class="footer-call">
+          <div class="text-center">
+            <h2>ЗАПИШИТЕСЬ ПО ТЕЛЕФОНУ</h2>
+            <h2>(3462) 91-00-51</h2>
+            <div class="line-bottom width-sm"></div>
+          </div>
+        </div>
+      </div>
+          <p>&copy; 2017 "Авто Комфорт" Центр дополнительного оборудования</p>
+          <p>т.(3462) 91-00-51, (3462) 60-56-72, (3462) 60-56-71</p>
+          <p>г.Сургут, ул.Профсоюзов, 25 к3, бокс 5А</p>
+          <p class="developer">Разработка сайтов <a href="http://kedrovski.com">kedrovski.com</a></p>
+          <br><br>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+    <script src="js/aos.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_u2rm0i50T23yxNX7G8Eba");
+       })();
+    </script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+
+  </body>
+</html>
